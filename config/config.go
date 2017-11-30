@@ -9,11 +9,15 @@ import (
 var (
 	//Token ... contains oath2 string
 	Token string
-	//BotPrefex ... cotains command prefex for commands.
-	BotPrefix                string
-	TwitterConsumerSecret    string
-	TwitterConsumerKey       string
-	TwitterAccessToken       string
+	//BotPrefix cotains command prefex for commands.
+	BotPrefix string
+	//TwitterConsumerSecret ... contains ConsumerSecret token
+	TwitterConsumerSecret string
+	//TwitterConsumerKey contains ConsumerKey token
+	TwitterConsumerKey string
+	//TwitterAccessToken contains Twitter Access Token
+	TwitterAccessToken string
+	//TwitterAccessTokenSecret Contains Twitter Access Token Secret
 	TwitterAccessTokenSecret string
 
 	config *configStruct

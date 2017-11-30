@@ -1,17 +1,5 @@
 package bot
 
-/*
-
-
-	TwitterConsumerKey = config.TwitterConsumerKey
-	TwitterConsumerSecret = config.TwitterConsumerSecret
-	TwitterAccessToken = config.TwitterAccessToken
-	TwitterAccessTokenSecret = config.TwitterAccessTokenSecret
-
-
-
-*/
-
 import (
 	"log"
 

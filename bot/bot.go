@@ -13,13 +13,14 @@ import (
 var BotID string
 var goBot *discordgo.Session
 
-var help_menu = []string{
+var helpMenu = []string{
 	"`help                - Displays command list to user",
 	"`tweet24cc [message] - tweets message from 24Carrotcraft Twitter account.",
 	"`setstatus [message] - Sets message to send when pinged from other user",
 	"`adamsandlermovies   - displays all adam sandler movies",
 }
 
+//Start connects bot to discord and starts stream.
 func Start() {
 
 	goBot, err := discordgo.New("Bot " + config.Token)
@@ -67,9 +68,9 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 			var message = "```--Here is a list of my commands!--\n"
 
-			for index := range help_menu {
+			for index := range helpMenu {
 
-				message += help_menu[index] + "\n"
+				message += helpMenu[index] + "\n"
 
 			}
 
@@ -102,28 +103,6 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		}
 	}
 
-	/*
-	   if m.Author.ID == BotID {
-	     return
-	   }
-
-	   if m.Content == "hi" {
-	     var message = fmt.Sprintf("Hello %s!", m.Author.Mention())
-	     _, _ = s.ChannelMessageSend(m.ChannelID, message)
-	   }
-
-	   if m.Content == "bye" {
-	     var message = fmt.Sprintf("Good bye %s!", m.Author.Mention())
-	     _, _ = s.ChannelMessageSend(m.ChannelID, message)
-	   }
-
-	   if m.Content == "Good Morning!" {
-
-	     var message = fmt.Sprintf("Good Morning %s!", m.Author.Mention())
-	     _, _ = s.ChannelMessageSend(m.ChannelID, message)
-
-	   }
-	*/
 	fmt.Print(m.Author.Username)
 	c.Print(" > ")
 	fmt.Println(m.Content)
