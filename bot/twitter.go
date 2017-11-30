@@ -9,6 +9,7 @@ import (
 	"github.com/dghubble/oauth1"
 )
 
+//Tweet takes message as string and tweets string.
 func Tweet(message string) string {
 
 	var consumerKey = config.TwitterConsumerKey
