@@ -1,3 +1,4 @@
 config.json
 dootdoot
 .DS_Store
+.gitignore
