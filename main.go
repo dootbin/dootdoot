@@ -5,6 +5,7 @@ import (
 
 	"./bot"
 	"./config"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
@@ -19,4 +20,5 @@ func main() {
 
 	<-make(chan struct{})
 	return
+
 }
