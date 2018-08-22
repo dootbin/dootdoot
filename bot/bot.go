@@ -25,6 +25,7 @@ var channelSpawn = "343904691480166403"
 var channelNether = "236466997158871040"
 var channelGoodBoyPoints = "402105717932294144"
 
+
 var guild24CarrotCraft = "195174072634572800"
 
 //BotID ... is exported var
