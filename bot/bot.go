@@ -319,11 +319,11 @@ func expHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 					uid := strconv.Itoa(userID)
 
 					println("Created user " + uid)
-					s.ChannelMessageSend(channelgood_boy_points, "Your good_boy_points are 0!")
+					s.ChannelMessageSend(channelgood_boy_points, "Your good boy points are 0!")
 
 				} else {
 
-					message := "Your total good_boy_points are " + userXP + "!"
+					message := "Your total good boy points are " + userXP + "!"
 					_, _ = s.ChannelMessageSend("402105717932294144", message)
 
 				}
