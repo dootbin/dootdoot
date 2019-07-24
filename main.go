@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"./bot"
-	"./config"
+	"github.com/dootbin/dootdoot/bot"
+	"github.com/dootbin/dootdoot/config"
 	_ "github.com/mattn/go-sqlite3"
 )
 
