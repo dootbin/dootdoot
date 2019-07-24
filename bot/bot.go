@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"../config"
 	"github.com/bwmarrin/discordgo"
+	"github.com/dootbin/dootdoot/config"
 	"github.com/fatih/color"
 )
 
