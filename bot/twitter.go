@@ -3,7 +3,7 @@ package bot
 import (
 	"log"
 
-	"../config"
+	"github.com/dootbin/dootdoot/config"
 
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
