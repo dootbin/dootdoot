@@ -23,7 +23,8 @@ var channelScreenShots = "241404784425435148"
 var channelTechTalk = "326561998227767299"
 var channelSpawn = "343904691480166403"
 var channelNether = "236466997158871040"
-var channelModPoints = "402105717932294144"
+var channelGoodBoyPoints = "402105717932294144"
+
 
 var guild24CarrotCraft = "195174072634572800"
 
@@ -241,7 +242,7 @@ func gradHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 						if error != nil {
 
-							s.ChannelMessageSend(channelModPoints, "Invalid amount")
+							s.ChannelMessageSend(channelGoodBoyPoints, "Invalid amount")
 
 						} else {
 
@@ -305,7 +306,7 @@ func expHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		if strings.HasPrefix(m.Content, config.BotPrefix) {
 
 			userCommand := strings.Split(m.Content, " ")
-			if strings.ToLower(userCommand[0]) == "`modpoints" {
+			if strings.ToLower(userCommand[0]) == "`good_boy_points" {
 
 				userID, _ := strconv.Atoi(m.Author.ID)
 				var userXP string
@@ -319,11 +320,11 @@ func expHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 					uid := strconv.Itoa(userID)
 
 					println("Created user " + uid)
-					s.ChannelMessageSend(channelModPoints, "Your modpoints are 0!")
+					s.ChannelMessageSend(channelGoodBoyPoints, "Your good boy points are 0!")
 
 				} else {
 
-					message := "Your total modpoints are " + userXP + "!"
+					message := "Your total good boy points are " + userXP + "!"
 					_, _ = s.ChannelMessageSend("402105717932294144", message)
 
 				}
